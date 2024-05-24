@@ -80,15 +80,13 @@ def run():
     server_address = ('', 8000)  
     httpd = HTTPServer(server_address, RequestHandler)
     print('Starting server on port 8000...')
-    httpd.serve_forever()
+    try:
+        httpd.serve_forever()
+    except KeyboardInterrupt:
+        print('\nShutting down the server...')
+        httpd.server_close()
+        print('Server shut down successfully.')
 
 if __name__ == "__main__":
     restaurant = Restaurant('food.json')  
     run()
-
-try:
-    server.serve_forever()
-except KeyboardInterrupt:
-    print('\nShutting down the server...')
-    server.socket.close()
-    
