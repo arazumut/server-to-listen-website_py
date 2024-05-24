@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "name": "Shrimp-fried Rice",
+    "ingredients": ["shrimp", "rice"]
+  },
+  {
+    "id": 2,
+    "name": "Beer Plate",
+    "ingredients": ["French Fries", "Onion Rings", "Sausages", "Chicken Wings"]
+  },
+  {
+    "id": 2,
+    "name": "Beer Plate",
+    "ingredients": [
+      {
+        "name": "Rice",
+        "groups": ["vegan", "vegetarian"],
+        "options": [
+          {"name": "Long grain white rice", "quality": "high", "price": 3, "per_amount": "kilogram"},
+          {"name": "Medium grain brown rice", "quality": "medium", "price": 2, "per_amount": "kilogram"},
+          {"name": "Quick cooking white rice", "quality": "low", "price": 1.5, "per_amount": "kilogram"}
+        ]
+      },
+      {
+        "name": "Pasta",
+        "groups": ["vegetarian"],
+        "options": [
+          {"name": "Semolina pasta", "quality": "high", "price": 2, "per_amount": "kilogram"},
+          {"name": "Whole wheat pasta", "quality": "medium", "price": 1.5, "per_amount": "kilogram"},
+          {"name": "Enriched pasta", "quality": "low", "price": 1, "per_amount": "kilogram"}
+        ]
+      }
+    ]
+  },
+  {"price": 40.99},
+  {
+    "id": 2,
+    "name": "Beer Plate",
+    "price": 40.99,
+    "quality_score": 27,
+    "ingredients": [
+      {"name": "French Fries", "quality": "high"},
+      {"name": "Onion Rings", "quality": "high"},
+      {"name": "Sausages", "quality": "high"},
+      {"name": "Chicken Wings", "quality": "low"}
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Beer Plate",
+    "ingredients": ["French Fries", "Onion Rings", "Sausages", "Chicken Wings"]
+  },
+  {
+    "id": 2,
+    "name": "Beer Plate",
+    "price": 40.99,
+    "quality_score": 27,
+    "ingredients": [
+      {"name": "French Fries", "quality": "high"},
+      {"name": "Onion Rings", "quality": "high"},
+      {"name": "Sausages", "quality": "high"},
+      {"name": "Chicken Wings", "quality": "low"}
+    ]
+  }
+]
