@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "Özel Fantastiko Burger",
+        "ingredients": ["et", "marul", "domates", "peynir"]
+    },
+    {
+        "id": 2,
+        "name": "Özel Gonya Etliekmeği",
+        "ingredients": ["et", "un", "soğan", "biber"]
+    },
+    {
+        "id": 3,
+        "name": "Özel Meksiko Burger",
+        "ingredients": ["et", "jalapeno", "domates", "peynir"]
+    },
+    {
+        "id": 4,
+        "name": "Özel Döner Burger",
+        "ingredients": ["döner eti", "marul", "domates", "peynir"]
+    }
+]

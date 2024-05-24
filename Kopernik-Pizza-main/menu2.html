@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <!--STYLE CSS-->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!--Header Section Start-->
+    <header class="header">
+        <!-- Buraya header içeriğini ekleyebilirsiniz -->
+    </header>
+    <!--Header Section End-->
+
+    <!--Menu Section Start-->
+    <section class="menu">
+        <h1 class="heading"><span>Menü</span></h1>
+        <div class="box-container">
+            <ul id="menu-list"></ul> <!-- Menü listesi buraya eklenecek -->
+        </div>
+    </section>
+    <!--Menu Section End-->
+
+    <!--Footer Start-->
+    <footer>
+        <!-- Buraya footer içeriğini ekleyebilirsiniz -->
+    </footer>
+    <!--Footer End-->
+
+    <!-- JavaScript kodunu ekleyin -->
+    <script>
+        function getMenuItems() {
+            fetch('http://localhost:5500/listMeals') // Python sunucusunun adresini buraya yazın
+            .then(response => response.json())
+            .then(data => {
+                // Menü verilerini işleme
+                const menuList = document.getElementById('menu-list');
+                data.forEach(item => {
+                    const li = document.createElement('li');
+                    li.textContent = `${item.name} - $${item.price}`;
+                    menuList.appendChild(li);
+                });
+            })
+            .catch(error => console.error('Error:', error));
+        }
+
+        // Sayfa yüklendiğinde menü verilerini al
+        window.onload = getMenuItems;
+    </script>
+</body>
+</html>

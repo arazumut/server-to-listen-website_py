@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <!--STYLE CSS-->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script>
+        // Bu fonksiyon, Python HTTP sunucusuna GET isteği gönderir
+        function sendGetRequest() {
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "http://localhost:8000/listMeals", true); // Python sunucunuzun adresine ve portuna uygun olarak güncelleyin
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    console.log(xhr.responseText); // Yanıtı konsola yazdırabilirsiniz
+                }
+            };
+            xhr.send();
+        }
+    
+        // Sayfa yüklendiğinde otomatik olarak GET isteği göndermek için bu kodu ekleyin
+        window.onload = function () {
+            sendGetRequest();
+        };
+    </script>
+    
+    
+
+
+</head>
+<body>
+    <!--Header Section Start-->
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="chef photo">
+        </a>
+        <nav class="navbar">
+            <a href="index.html" class="">Ana Sayfa</a>
+            <a href="about.html" class="">Hakkımızda</a>
+            <a href="menu.html" class="">Menü</a>
+            <a href="products.html" class="active">Şefin Spesialleri</a>
+            <a href="review.html" class="">Yorumlar</a>
+            <a href="contact.html" class="">İletişim</a>
+            <a href="blogs.html" class="">Blog</a>
+            
+        </nav>
+
+        <div class="buttons">
+            <button id="search-btn"><i class="fa-solid fa-magnifying-glass fa-bounce"></i></button>
+            <button id="shopping-btn"><i class="fa-solid fa-cart-shopping fa-bounce"></i></button>
+            <button id="bar"><i class="fa-solid fa-bars fa-bounce"></i></button>
+        </div>
+
+        <div class="search-form">
+            <input type="text" class="search-input" id="search-box" placeholder="Ara"> 
+            <i class="fa-solid fa-magnifying-glass fa-bounce"></i>
+        </div>
+
+      <div class="cart-items-container ">
+        <div class="cart-item">
+        <i class="fas fa-times"></i>
+        <img src="images/menu-2.png" alt="menu">
+        <div class="content">
+            <h3>Doydum Burger</h3>
+            <div class="price">135 TL</div>
+        </div>
+        </div>
+        <div class="cart-item">
+        <i class="fas fa-times"></i>
+        <img src="images/menu-3.png" alt="menu">
+        <div class="content">
+            <h3>Kopernik Pizza</h3>
+            <div class="price">165 TL</div>
+        </div>
+
+        </div>
+        <div class="cart-item">
+        <i class="fas fa-times"></i>
+        <img src="images/menu-4.png" alt="menu">
+        <div class="content">
+            <h3>Github Burger</h3>
+            <div class="price">170 TL</div>
+        </div>
+
+        </div>
+        <div class="cart-item">
+        <i class="fas fa-times"></i>
+        <img src="images/menu-1.png" alt="menu">
+        <div class="content">
+            <h3>Mini Pizza</h3>
+            <div class="price">80 TL</div>
+        </div>
+
+        </div>
+
+        <a href="#" class="btn">Siparişi ver</a>
+      </div>
+
+    </header>
+     <!--Header Section End-->
+
+    
+
+
+   <!--Product Section Start-->
+
+   <section class="products">
+    <h1 class="heading">Şefin Spesialleri</h1>
+    <div class="box-container">
+    <div class="box">
+        <div class="box-head">
+            <span class="title">Burger</span>
+            <a href="#" class="name">Özel Fantastiko Burger</a>
+            <div class="image">
+                <img src="images/product-1.png" alt="Special Mexico Burger" >   
+            </div>
+        </div>
+        <div class="box-body">
+           <div class="info">
+            <b class="price">155 TL</b>
+            <span class="amount">110gr / 300 Cal</span>
+           </div>
+           <div class="product-btn">
+            <a href="#">
+                <i class="fas fa-plus"></i>
+            </a>
+           </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="box-head">
+            <span class="title">Etliekmek</span>
+            <a href="#" class="name">Özel Gonya Etliekmeği</a>
+            <div class="image">
+                <img src="images/etliekmek.png" alt="Etliekmek" >   
+            </div>
+        </div>
+        <div class="box-body">
+           <div class="info">
+            <b class="price">100 TL</b>
+            <span class="amount">131.9gr / 277 Cal</span>
+           </div>
+           <div class="product-btn">
+            <a href="#">
+                <i class="fas fa-plus"></i>
+            </a>
+           </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="box-head">
+            <span class="title">Burger</span>
+            <a href="#" class="name">Özel Meksiko Burger</a>
+            <div class="image">
+                <img src="images/product-2.png" alt="Special Mexico Burger" >   
+            </div>
+        </div>
+        <div class="box-body">
+           <div class="info">
+            <b class="price">160 TL</b>
+            <span class="amount">125gr / 350 Cal</span>
+           </div>
+           <div class="product-btn">
+            <a href="#">
+                <i class="fas fa-plus"></i>
+            </a>
+           </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="box-head">
+            <span class="title">Burger</span>
+            <a href="#" class="name">Özel Döner Burger</a>
+            <div class="image">
+                <img src="images/dark-product.png" alt="Special Mexico Burger">   
+            </div>
+        </div>
+        <div class="box-body">
+           <div class="info">
+            <b class="price">170 TL</b>
+            <span class="amount">135gr / 400 Cal</span>
+           </div>
+           <div class="product-btn">
+            <a href="#">
+                <i class="fas fa-plus"></i>
+            </a>
+           </div>
+        </div>
+    </div>
+    </div>
+    </section>
+
+    <!--Product Section End-->
+
+  
+   <!--Footer Start-->
+   <footer>
+    <div class="footer-container">
+
+    
+       <div class="search">
+        <form action="">
+        <input type="text" placeholder="Ara">
+       <button class="btn-3">Ara</button> 
+        </form>
+       
+        
+       </div>
+       <div class="items-icon">
+          <a href="#"><i class="fa-brands fa-facebook fa-bounce" target="_blank"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter fa-bounce" target="_blank"></i></i></a>
+          <a href="https://www.instagram.com/parafinserdar/" target="_blank"><i class="fa-brands fa-instagram fa-bounce"></i></a>
+          <a href="https://www.linkedin.com/in/serdar-alkan-ab5233270/" target="_blank"><i class="fa-brands fa-linkedin fa-bounce"></i></a>
+          <a href="#"><i class="fa-brands fa-pinterest fa-bounce" target="_blank"></i></a>      
+          <a href="https://github.com/ParafinSerdar" target="_blank"><i class="fa-brands fa-github fa-bounce"></i>  </a>      
+
+         
+       </div>
+
+       <div class="items-sections">
+           <a href="index.html" class="btn-2">Menü</a>
+           <a href="about.html" class="btn-2">Hakkımızda</a>
+           <a href="menu.html" class="btn-2">Menü</a>
+           <a href="products.html" class="btn-2 active">Şefin Spesialleri</a>
+           <a href="review.html" class="btn-2">Eleştiriler</a>
+           <a href="contact.html" class="btn-2">İletişim</a>
+           <a href="blogs.html" class="btn-2">Blog</a>
+       </div>
+
+       <p><span>Kamil Umut Araz</span> tarafından oluşturulmuştur | Her hakkı saklıdır</p>    
+   </div>
+
+  </footer>
+
+  <!--Footer End-->
+
+
+</body>
+</html>
+<script src="js/script.js"></script>

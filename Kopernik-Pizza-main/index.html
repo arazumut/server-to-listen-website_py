@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kopernik Pizza</title>
+    <!--STYLE CSS-->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!--Header Section Start-->
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="chef photo">
+        </a>
+        <nav class="navbar">
+            <a href="index.html" class="active">Ana Sayfa</a>
+            <a href="about.html" class="">Hakkımızda</a>
+            <a href="menu.html" class="">Menü</a>
+            <a href="products.html" class="">Şefin Spesialleri</a>
+            <a href="review.html" class="">Yorumlar</a>
+            <a href="contact.html" class="">İletişim</a>
+            <a href="blogs.html" class="">Blog</a>
+        </nav>
+
+        <div class="buttons">
+            <button id="search-btn"><i class="fa-solid fa-magnifying-glass fa-bounce"></i></button>
+            <button id="shopping-btn"><i class="fa-solid fa-cart-shopping fa-bounce"></i></button>
+            <button id="bar"><i class="fa-solid fa-bars fa-bounce"></i></button>
+        </div>
+
+        <div class="search-form">
+            <input type="text" class="search-input" id="search-box" placeholder="Ara"> 
+            <i class="fa-solid fa-magnifying-glass fa-bounce"></i>
+        </div>
+
+      <div class="cart-items-container ">
+        <div class="cart-item">
+        <i class="fas fa-times"></i>
+        <img src="images/menu-2.png" alt="menu">
+        <div class="content">
+            <h3>Doydum Burger</h3>
+            <div class="price">135 TL</div>
+        </div>
+
+        </div>
+        <div class="cart-item">
+        <i class="fas fa-times"></i>
+        <img src="images/menu-3.png" alt="menu">
+        <div class="content">
+            <h3>arazumut <span>Pizza</span></h3>
+            <div class="price">165 TL</div>
+        </div>
+
+        </div>
+        <div class="cart-item">
+        <i class="fas fa-times"></i>
+        <img src="images/menu-4.png" alt="menu">
+        <div class="content">
+            <h3>Github Burger</h3>
+            <div class="price">170 TL</div>
+        </div>
+
+        </div>
+        <div class="cart-item">
+        <i class="fas fa-times"></i>
+        <img src="images/menu-1.png" alt="menu">
+        <div class="content">
+            <h3>Mini Pizza</h3>
+            <div class="price">80 TL</div>
+        </div>
+
+        </div>
+
+        <a href="#" class="btn">Siparişi ver</a>
+      </div>
+
+    </header>
+     <!--Header Section End-->
+
+     <!--Home Section Start-->
+     <section class="home">
+        <div class="content">
+        <h3>arazumut <span>Pizza</span></h3> 
+        <p>Galaksinin en sıcak pizzası</p><br>
+        <a href="#" class="btn">Şimdi Sipariş Verin </a> 
+        </div>
+        
+     </section>
+     
+     <!--Home Section End-->
+
+    <!--Menu Section Start-->
+   <section class="menu">
+    <h1 class="heading"><span>Menü</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <div class="box-head">
+                <img src="images/menu-1.png" alt="pizza">
+                <span class="menu-category">Pizza</span>
+                <h3>Mini Pizza</h3>
+                <div class="price">80 TL <span>95 TL</span></div>
+            </div>
+            <div class="box-body">
+                <a href="#" class="btn">Sepete Ekle</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-head">
+                <img src="images/menu-2.png" alt="smash burger">
+                <span class="menu-category">Burger</span>
+                <h3>Doydum Burger</h3>
+                <div class="price">135 TL <span>150 TL</span></div>
+            </div>
+            <div class="box-body">
+                <a href="#" class="btn">Sepete Ekle</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-head">
+                <img src="images/menu-3.png" alt="mushroom pizza">
+                <span class="menu-category">Pizza</span>
+                <h3>Kopernik Pizza</h3>
+                <div class="price">165 TL <span>180 TL</span></div>
+            </div>
+            <div class="box-body">
+                <a href="#" class="btn">Sepete Ekle</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-head">
+                <img src="images/menu-4.png" alt="3x deluxe burger">
+                <span class="menu-category">Burger</span>
+                <h3>Github Burger</h3>
+                <div class="price">170 TL <span>200 TL</span></div>
+            </div>
+            <div class="box-body">
+                <a href="#" class="btn">Sepete Ekle</a>
+            </div>
+        </div>
+    </div>
+   </section>
+    
+    <!--Menu Section End-->
+
+
+    <!--Product Section Start-->
+
+   <section class="products">
+    <h1 class="heading">Şefin Spesialleri</h1>
+    <div class="box-container">
+    <div class="box">
+        <div class="box-head">
+            <span class="title">Burger</span>
+            <a href="#" class="name">Özel Fantastiko Burger</a>
+            <div class="image">
+                <img src="images/product-1.png" alt="Special Mexico Burger" >   
+            </div>
+        </div>
+        <div class="box-body">
+           <div class="info">
+            <b class="price">155 TL</b>
+            <span class="amount">110gr / 300 Cal</span>
+           </div>
+           <div class="product-btn">
+            <a href="#">
+                <i class="fas fa-plus"></i>
+            </a>
+           </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="box-head">
+            <span class="title">Etliekmek</span>
+            <a href="#" class="name">Özel Gonya Etliekmeği</a>
+            <div class="image">
+                <img src="images/etliekmek.png" alt="Etliekmek" >   
+            </div>
+        </div>
+        <div class="box-body">
+           <div class="info">
+            <b class="price">100 TL</b>
+            <span class="amount">131.9gr / 277 Cal</span>
+           </div>
+           <div class="product-btn">
+            <a href="#">
+                <i class="fas fa-plus"></i>
+            </a>
+           </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="box-head">
+            <span class="title">Burger</span>
+            <a href="#" class="name">Özel Meksiko Burger</a>
+            <div class="image">
+                <img src="images/product-2.png" alt="Special Mexico Burger" >   
+            </div>
+        </div>
+        <div class="box-body">
+           <div class="info">
+            <b class="price">160 TL</b>
+            <span class="amount">125gr / 350 Cal</span>
+           </div>
+           <div class="product-btn">
+            <a href="#">
+                <i class="fas fa-plus"></i>
+            </a>
+           </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="box-head">
+            <span class="title">Burger</span>
+            <a href="#" class="name">Özel Döner Burger</a>
+            <div class="image">
+                <img src="images/dark-product.png" alt="Special Mexico Burger">   
+            </div>
+        </div>
+        <div class="box-body">
+           <div class="info">
+            <b class="price">170 TL</b>
+            <span class="amount">135gr / 400 Cal</span>
+           </div>
+           <div class="product-btn">
+            <a href="#">
+                <i class="fas fa-plus"></i>
+            </a>
+           </div>
+        </div>
+    </div>
+    </div>
+    </section>
+
+    <!--Product Section End-->
+
+     <!--About Section Start-->
+
+     <section class="about">
+        <h1 class="heading">Hakkımızda</h1> 
+        <div class="about-container">
+            <div class="image">
+            <img src="images/about.jpg" alt="hamburger with fried potatoes" width="50%">
+        </div>
+        <div class="content">
+            <h1>Bu güzelim lezzetlerin sırrı nerede saklı?</h1>
+            <p>Bu lezzet tarif edilemez.Şaka şaka gerçekten böyle lezzetlerin sırrını öğrenmek istiyorsanız <br><a href="https://www.linkedin.com/in/serdar-alkan-ab5233270/" target="_blank" style="color: black;"><i class="fa-brands fa-linkedin fa-bounce" style="color: #0A66C2;"></i> Linkedin hesabımdan bana ulaşın.</a><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nostrum, et a corporis mollitia dicta, eos asperiores doloribus reprehenderit eius omnis vero quae suscipit possimus dolores dolore dolorum ipsam. Sed quas ullam optio asperiores, incidunt ipsam praesentium. Repellat recusandae minima aspernatur odio iste sunt vel placeat maiores non neque. In.</p>
+            <a href="#" class="btn">Daha Fazla Bilgi Edinin</a>
+        </div>
+        
+        </div>
+
+     </section>
+     <!--About Section End-->
+
+ <!--Review Section Start-->
+  <section class="review">
+    <h1 class="heading">Müşteri Yorumları</h1> 
+    <div class="box-container">
+        <div class="box">
+            <img src="images/quote.png" alt="quote">
+            <p>Aman Allah'ım bu nasıl bir lezzet böyle ben hayatımda böyle bir lezzet görmedim.Mutlaka gelmelisiniz buraya.Bundan böyle favori restaurantım burası.</p>
+             <img src="images/s8010tiZ_400x400.jpg" alt="somer-cheff" class="user">
+             <h3>Somer Şef</h3>
+             <div class="stars">
+                <i class="fa-solid fa-star fa-bounce"></i>
+                <i class="fa-solid fa-star fa-bounce"></i>
+                <i class="fa-solid fa-star fa-bounce"></i>
+                <i class="fa-solid fa-star-half fa-bounce"></i>
+             </div>
+        </div>
+        <div class="box">
+            <img src="images/quote.png" alt="quote">
+            <p>Yemekler şahane bu lezzetlere ek olarak tavuklarla ilgili lezzetler gelirse çok güzel olur.Özellikle tavuklu pizza ve kızarmış tavuk burger denemeyi çok isterim.</p>
+             <img src="images/atik_sef.png" alt="atik-cheff" class="user">
+             <h3>Atike Şef</h3>
+             <div class="stars">
+                <i class="fa-solid fa-star fa-bounce"></i>
+                <i class="fa-solid fa-star fa-bounce"></i>
+                <i class="fa-solid fa-star fa-bounce"></i>
+                <i class="fa-solid fa-star-half fa-bounce"></i>
+             </div>
+        </div>
+        <div class="box">
+            <img src="images/quote.png" alt="quote">
+            <p>Restaurantın sahibi olduğumdan demiyorum başka yere gitmem hep burda yerim şahaneeeee lezzet.Şeflerimi tebrik ediyorum ailecek favori mekanımız burası.</p>
+             <img src="images/benkamil.jpg" alt="serdar-cheff" class="user">
+             <h3>Serdar Şef</h3>
+             <div class="stars">
+                <i class="fa-solid fa-star fa-bounce"></i>
+                <i class="fa-solid fa-star fa-bounce"></i>
+                <i class="fa-solid fa-star fa-bounce"></i>
+                <i class="fa-solid fa-star fa-bounce"></i>
+             </div>
+        </div>
+        <div class="box">
+            <img src="images/quote.png" alt="quote">
+            <p>Normalde hiç bir yemeği beğenmem annemin yemekleri dışında.Şahane bir lezzet,annemin tek rakibi bu restaurant olabilir.  </p>
+             <img src="images/S6ktDSHT_400x400.jpg" alt="mehmet-cheff" class="user">
+             <h3>Mehmet Şef</h3>
+             <div class="stars">
+                <i class="fa-solid fa-star fa-bounce"></i>
+                <i class="fa-solid fa-star fa-bounce"></i>
+                <i class="fa-solid fa-star fa-bounce"></i>
+                <i class="fa-solid fa-star-half fa-bounce"></i>
+             </div>
+        </div>
+    </div>
+  </section>
+
+ <!--Review Section End-->
+
+
+  <!--Contact Section Start-->
+ <section class="contact">
+    <h1 class="heading">Bize Ulaşın</h1> 
+    <div class="box-container">
+        <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Kosova,%20Veysel%20Karani%20Cd.%20No:131/A,%2042250%20Sel%C3%A7uklu/Konya+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps trackers</a></iframe>
+    <form action="">
+
+        <h3>Bizimle İletişime Geçin</h3>
+            <div class="input-box"> 
+                <i class="fas fa-user"></i>
+            <input type="text"placeholder="İsminizi giriniz">
+        </div>
+        
+        <div class="input-box">  
+            <i class="fas fa-envelope"></i>
+            <input type="email"placeholder="Mail adresinizi giriniz">
+        </div>
+       
+             <div class="input-box">  
+                <i class="fas fa-phone"></i>
+            <input type="number"placeholder="Telefon numaranızı giriniz">
+        </div>
+        <button class="btn" type="submit">Şimdi İletişime Geçin</button>
+        </div>
+        
+
+    </form>
+ </section>
+
+
+  <!--Contact Section End-->
+
+  <!--Blogs Section Start-->
+   <section class="blogs">
+    <h1 class="heading">Blog</h1> 
+    <div class="box-container">
+        <div class="box">
+            <div class="image">
+            <img src="images/blog-1.jpg" alt="blog-1">    
+            </div>
+            <div class="content">
+                <a href="#" class="title">Islak hamburger nasıl yapılır?</a>
+            </div>
+            <span style="color: black;">Serdar Şef / 10 Mart, 2022</span>
+            <p>İlk olarak köfteleri hazırlayın. İsteğinize göre dana, hindi veya tavuk etinden köfteler yapabilirsiniz. Köfteleri şekillendirin ve pişirin.
+                Köfteleri pişirirken, bir tavada veya ızgarada hamburger ekmeğini hafifçe ısıtın.
+                Ekmeğin alt kısmına isteğinize göre sosları sürün (ketçap, mayonez, hardal vb.).
+                Üzerine pişmiş köfteyi yerleştirin.
+                Köftenin üzerine kaşar peyniri dilimlerini koyun ve biraz erimesi için üzerine bir kapak kapatın veya biraz bekleyin.
+                Diğer tarafta, soğan, domates ve turşuyu hazırlayın.
+                Kaşar peyniri eridikten sonra, üzerine isteğinize göre soğan, domates ve turşu dilimlerini ekleyin.
+                Ekmeğin üst kısmını kapatın ve servis yapmadan önce isteğe bağlı olarak turşu suyu ile ıslatın.
+                Islak hamburgeriniz hazır! <br> <span style="color: black; font-size:larger;">Afiyet olsun!</span></p>
+            <a href="#" class="btn">Devamını okuyun</a>
+        </div>
+        <div class="box">
+            <div class="image">
+            <img src="images/blog-2.jpg" alt="blog-2">
+            </div>
+            <div class="content">
+                <a href="#" class="title">Hamburger Nasıl Yenmeli?</a>
+            </div>
+            <span style="color: black;">Somer Şef / 12 Nisan, 2022</span><br>
+            <p><span style="font-size: larger; color: black">Hamburgeri tutma </span><br> Hamburgeri yemek için en yaygın yöntemlerden biri, iki elinizle hamburgeri tutmaktır. Hamburgeri sıkıca kavrayın ancak çok sıkmayın, aksi takdirde malzemeleri dışarıya sıkabilirsiniz.<br>
+
+                <span style="font-size: larger; color: black">Yavaş yiyin</span><br> Hamburgeri yavaşça yemeye özen gösterin. Bu, lezzetin tadını çıkarmanıza ve doymuş hissetmenize yardımcı olacaktır.<br>
+                
+                <span style="font-size: larger; color: black">Düzenli ısırıklar alın</span><br> Hamburgeri yemek için düzenli ısırıklar alın. Bu, hamburgerin her bir bileşeninin tadını bir arada denemenizi sağlar.<br>
+                
+                <span style="font-size: larger; color: black">Lezzetleri karıştırın</span><br> Hamburgerdeki farklı lezzetleri deneyimlemek için malzemeleri karıştırabilirsiniz. Örneğin, her ısırıkta biraz et, peynir, marul ve sos almak için hamburgeri döndürebilirsiniz.<br>
+                
+                <span style="font-size: larger; color: black">Sosları kullanın</span><br> Hamburgerinizi soslarla lezzetlendirebilirsiniz. Klasik olarak ketçap, mayonez ve hardal gibi soslar tercih edilebilir. Ancak, kişisel tercihinize göre farklı soslar da kullanabilirsiniz.<br>
+                
+                <span style="font-size: larger; color: black">Eşlik eden yiyeceklerle tamamlayın</span><br> Hamburgerinizi patates kızartması, mısır cipsi veya turşu gibi eşlik eden yiyeceklerle tamamlayabilirsiniz. Bu, lezzetli bir fast-food deneyimi sunar.</p><br>
+            <a href="#" class="btn">Devamını okuyun</a>
+        </div>
+        <div class="box">
+            <div class="image">
+            <img src="images/blog-3.jpg" alt="blog-3">    
+            </div>
+            <div class="content">
+                <a href="#" class="title">Sunum neden çok önemli?</a>
+            </div>
+            <span style="color: black;">Mehmet Şef / 24 Haziran, 2022</span>
+            <p><span style="font-size: larger; color: black;">İştahı artırır</span><br> İyi bir şekilde sunulmuş bir hamburger, göz alıcı ve çekici görünebilir. Bu, insanların iştahını artırabilir ve hamburgeri yemeye daha istekli hale getirebilir.<br>
+
+                <span style="font-size: larger; color: black;">Lezzeti vurgular</span><br> Hamburgerin doğru bir şekilde sunulması, içindeki malzemelerin ve lezzetlerin vurgulanmasını sağlar. Renkli malzemelerin düzenli ve estetik bir şekilde yerleştirilmesi, hamburgerin lezzetini gösterir.<br>
+                
+                <span style="font-size: larger; color: black;">Profesyonel bir imaj yaratır</span><br> Restoranlar ve kafeler gibi işletmeler için, hamburgerin dikkat çekici bir şekilde sunulması, müşterilere profesyonel bir izlenim verir. Bu da müşterilerin tekrar gelme olasılığını artırabilir.<br>
+                
+                <span style="font-size: larger; color: black;">Marka imajını güçlendirir</span><br> Hamburgerin sunumu, bir restoran veya fast-food zincirinin marka imajını yansıtabilir. Markaya özgü sunum tarzları, müşterilerin markayı tanıması ve hatırlaması için önemlidir.<br>
+                
+                <span style="font-size: larger; color: black;">İnstagram ve diğer medya etkileşimleri için önemli</span><br> Görsel olarak çekici bir hamburger, müşterilerin sosyal medya platformlarında paylaşma olasılığını artırabilir. Bu da restoranın veya markanın tanıtımına yardımcı olabilir.<br>
+                
+                Kalite algısını etkiler: Hamburgerin dikkatlice ve özenle sunulması, müşterilere kaliteli bir yeme deneyimi sunduğu algısını yaratır. Bu da müşteri memnuniyetini artırabilir.</p>
+            <a href="#" class="btn">Devamını okuyun</a>
+        </div>
+    </div>
+   </section>
+
+   <!--Footer Start-->
+   <footer>
+     <div class="footer-container">
+
+     
+        <div class="search">
+         <form action="">
+         <input type="text" placeholder="Ara">
+        <button class="btn-3">Ara</button> 
+         </form>
+        
+         
+        </div>
+        <div class="items-icon">
+           <a href="#"><i class="fa-brands fa-facebook fa-bounce" target="_blank"></i></a>
+           <a href="#"><i class="fa-brands fa-twitter fa-bounce" target="_blank"></i></i></a>
+           <a href="https://www.instagram.com/k.umutarazz/" target="_blank"><i class="fa-brands fa-instagram fa-bounce"></i></a>
+           <a href="https://www.linkedin.com/https://www.linkedin.com/in/kamil-umut-araz-56712629a//" target="_blank"><i class="fa-brands fa-linkedin fa-bounce"></i></a>
+           <a href="#"><i class="fa-brands fa-pinterest fa-bounce" target="_blank"></i></a>      
+           <a href="https://github.com/arazumut" target="_blank"><i class="fa-brands fa-github fa-bounce"></i>  </a>      
+
+          
+        </div>
+
+        <div class="items-sections">
+            <a href="index.html" class="btn-2 active">Menü</a>
+            <a href="about.html" class="btn-2">Hakkımızda</a>
+            <a href="menu.html" class="btn-2">Menü</a>
+            <a href="products.html" class="btn-2">Şefin Spesialleri</a>
+            <a href="review.html" class="btn-2">Eleştiriler</a>
+            <a href="contact.html" class="btn-2">İletişim</a>
+            <a href="blogs.html" class="btn-2">Blog</a>
+        </div>
+
+        <p><span>Kamil Umut Araz</span> tarafından oluşturulmuştur | Her hakkı saklıdır</p>    
+    </div>
+
+   </footer>
+
+   <!--Footer End-->
+
+
+</body>
+</html>
+<script src="js/script.js"></script>

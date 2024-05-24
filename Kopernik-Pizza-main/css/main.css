@@ -1,0 +1,64 @@
+:root{  /*Değişken tanımlama */
+ --main-color:#2828;
+ --black-color:#0e0e0e;
+ --border:0.1rem solid rgba(255,255,255,0.4);
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s ease; /* üzerine gelindiğinde tak diye gelmek yerine yavaş gelme efekti */
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+html{
+    font-size: 62.5%; /* 1rem = 10px oldu   direkt font-size:10px de diyebilirdik */
+    overflow-x: hidden; /*aşağıda scroll çıkmasını engeller */
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth; /* güzel bir geçiş efekti*/
+}
+
+
+html::-webkit-scrollbar {  /*scrollun kayan tarafının tamamı  */
+    width: 1.5rem;  
+    background-color: var(--main-color);
+    
+}
+
+html::-webkit-scrollbar-thumb{ /* scrollun kayan kısmı */
+    background-color: beige;
+    border: 0.2rem solid black;
+}
+
+body{
+    background-color: var(--main-color);
+}
+
+section{ 
+    padding: 3.5rem 7%;/* yeni bir section eklendiğinde aynı hızada olması için */
+}
+
+a{
+    color: var(--main-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button{
+    cursor: pointer;
+}
+
+footer{
+    text-align: center;
+}
+
+#bar{
+    display: none;
+}
