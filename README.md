@@ -104,8 +104,43 @@ Zarif Kapatma:
 Bu önerileri takip ederek, betiği daha iyi işlevsellik, güvenilirlik ve bakım kolaylığı için geliştirebilirsiniz.
 
 
-Aynı zamanda aynı python programının golang ile yazılması da mümkündür.
-Aşağıda golang ile yazılmış aynı programın açılması yer almaktadır;
+<h1>Aynı zamanda aynı python programının golang ile yazılması da mümkündür.
+Aşağıda golang ile yazılmış aynı programın açılması yer almaktadır;</h1>
+
+bir restoranın menüsünü yönetmek ve istemcilerin bu menüye erişimini sağlamak amacıyla geliştirilmiş olan Go dilinde yazılmış bir web uygulamasını açıklamaktadır. Uygulama, JSON formatında bir dosyadan menü verilerini yükler, çeşitli filtreleme seçenekleriyle yemekleri listeler ve belirli bir yemek hakkında ayrıntılı bilgi sağlar.
+Genel Yapı
+
+Uygulama iki ana veri yapısı üzerinde çalışır:
+
+    Meal (Yemek): Bir yemeği temsil eder ve ID, Name, Ingredients (Malzemeler) gibi alanları içerir.
+    Restaurant (Restoran): Bir restoranı temsil eder ve menüsündeki yemekleri Menu alanında tutar.
+
+Fonksiyonlar ve İşlevleri
+
+    LoadMenu: Bir JSON dosyasından menü verilerini yükler. Dosya bulunamazsa veya geçersizse hata döner.
+    ListMeals: Belirtilen filtreleme seçeneklerine göre (vejetaryen ve vegan) menüdeki yemekleri listeler.
+    GetMeal: Belirtilen ID'ye sahip yemeği döner.
+    isMealVegetarian: Bir yemeğin vejetaryen olup olmadığını kontrol eder.
+    isMealVegan: Bir yemeğin vegan olup olmadığını kontrol eder.
+    isIngredientVegetarian: Bir malzemenin vejetaryen olup olmadığını kontrol eder (bu işlevin uygulanması gerekir).
+    isIngredientVegan: Bir malzemenin vegan olup olmadığını kontrol eder (bu işlevin uygulanması gerekir).
+
+HTTP Handler Fonksiyonları
+
+    listMealsHandler: HTTP GET isteği ile gelen is_vegetarian ve is_vegan parametrelerine göre yemekleri listeler ve JSON formatında döner.
+    getMealHandler: HTTP GET isteği ile gelen id parametresine göre belirtilen yemeği döner. Yemeğin bulunamaması durumunda 404 hatası döner.
+
+Ana İşlev
+
+main fonksiyonu şu işlemleri gerçekleştirir:
+
+    dataset.json dosyasından menüyü yükler.
+    listMeals ve getMeal HTTP handler fonksiyonlarını belirler.
+    HTTP sunucusunu localhost:5500 adresinde başlatır.
+
+Sonuç
+
+Bu uygulama, bir restoranın menü yönetimini ve kullanıcıların menüye erişimini kolaylaştıran temel bir web sunucusu sağlar. JSON formatındaki bir dosyadan menü verilerini yükleyerek, çeşitli filtreleme seçenekleriyle yemekleri listeler ve belirli bir yemek hakkında bilgi verir. Uygulamanın genişletilebilmesi ve malzemelerin vejetaryen/vegan kontrolü için ek işlevler eklenmesi mümkündür.
 
 
 ![Ekran görüntüsü 2024-05-24 150618](https://github.com/arazumut/server-to-listen-website-backend/assets/150933483/873d1907-82e5-4574-9952-5cc7744eaa6d)
