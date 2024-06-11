@@ -103,6 +103,11 @@ Zarif Kapatma:
 
 Bu önerileri takip ederek, betiği daha iyi işlevsellik, güvenilirlik ve bakım kolaylığı için geliştirebilirsiniz.
 
+
+Aynı zamanda aynı python programının golang ile yazılması da mümkündür.
+Aşağıda golang ile yazılmış aynı programın açılması yer almaktadır;
+
+
 ![Ekran görüntüsü 2024-05-24 150618](https://github.com/arazumut/server-to-listen-website-backend/assets/150933483/873d1907-82e5-4574-9952-5cc7744eaa6d)
 ![Ekran görüntüsü 2024-05-24 150642](https://github.com/arazumut/server-to-listen-website-backend/assets/150933483/f73d3af2-f941-48f7-9b29-f4ccd33354d1)
 ![Ekran görüntüsü 2024-05-24 150653](https://github.com/arazumut/server-to-listen-website-backend/assets/150933483/a8d4b9e9-a948-4c10-b33e-bba9507533d9)
