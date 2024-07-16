@@ -8,6 +8,7 @@ Ana Bileşenler
         Metodlar:
             list_meals: Vejetaryen ve vegan filtreleriyle tüm yemekleri listeler.
             get_meal: Bir yemeği ID'sine göre getirir.
+            
             _is_meal_vegetarian: Bir yemeğin vejetaryen olup olmadığını kontrol eder.
             _is_meal_vegan: Bir yemeğin vegan olup olmadığını kontrol eder.
             _is_ingredient_vegetarian: Bir bileşenin vejetaryen olup olmadığını kontrol etmek için yer tutucu.
