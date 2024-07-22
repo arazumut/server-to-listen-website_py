@@ -1,3 +1,7 @@
+  <a href="https://www.python.org" target="_blank" rel="noreferrer"> 
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> 
+    </a> 
+    <br>
 Genel Bakış
 
 Bu Python betiği, bir restoranın yemeklerini yönetmek ve bilgi sağlamak için API uç noktaları sunan basit bir HTTP sunucusu tanımlar. Betik, JSON dosyasından yemek verilerini okur, vejetaryen ve vegan filtreleri ile yemek listesini sağlar ve belirli bir yemeğin ID'si ile detaylarını getirir.
