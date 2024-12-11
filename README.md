@@ -30,7 +30,6 @@ Ana Bileşenler
         run fonksiyonu, HTTP sunucusunu 8000 portunda kurar ve başlatır.
         Betik, food.json verilerini kullanarak bir Restaurant nesnesi başlatır ve sunucuyu başlatır.
 
-Detaylı İşlevsellik
 Restaurant Sınıfı
 
 Başlatma (__init__ metodu):
