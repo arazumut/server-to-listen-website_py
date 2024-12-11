@@ -51,6 +51,8 @@ Başlatma (__init__ metodu):
 
 Yemekleri Listeleme (list_meals metodu):
 
+
+
     Vejetaryen ve vegan seçeneklerine göre yemekleri filtreler.
     Yemekleri filtrelemek için _is_meal_vegetarian ve _is_meal_vegan metodlarını kullanır.
     id, name ve ingredients bilgileriyle yemek listesini döner.
